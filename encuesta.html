@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta - Dulce Tentación</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo" style="color: var(--secondary); font-family: 'Playfair Display', serif; font-weight: 900; letter-spacing: 1px;">DULCE <span style="color: var(--primary);">TENTACIÓN</span></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#">Productos <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 5px;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="panaderia.html">Panadería <i class="fa-solid fa-bread-slice"></i></a></li>
+                        <li><a href="reposteria.html">Repostería <i class="fa-solid fa-cake-candles"></i></a></li>
+                        <li><a href="dulce-paladar.html">Dulce Paladar <i class="fa-solid fa-cookie"></i></a></li>
+                    </ul>
+                </li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="visitanos.html">Visítanos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <a href="https://wa.me/573105731569" class="btn btn-primary" style="padding: 10px 25px; font-size: 0.85rem; border-radius: 50px;">PEDIR YA</a>
+        </div>
+        <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+    </header>
+
+
+
+    <div class="page-header" style="background: var(--primary); color: white; padding: 120px 5% 60px; text-align: center;">
+        <h1>ENCUESTA DE SATISFACCIÓN</h1>
+        <p>Tu opinión es fundamental para nosotros.</p>
+    </div>
+
+    <section class="container">
+        <div style="max-width: 600px; margin: 0 auto; background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow-md);">
+            <form id="surveyForm">
+                <div style="margin-bottom: 20px;">
+                    <label>¿Cómo calificarías nuestros productos?</label>
+                    <select class="btn btn-outline" style="width: 100%; text-align: left; margin-top: 10px; color: var(--text-main);">
+                        <option>Excelente</option>
+                        <option>Bueno</option>
+                        <option>Regular</option>
+                        <option>Malo</option>
+                    </select>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <label>¿Qué producto te gusta más?</label>
+                    <input type="text" class="btn btn-outline" style="width: 100%; text-align: left; margin-top: 10px; color: var(--text-main);" placeholder="Ej: Pan Alillado">
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <label>Comentarios o sugerencias</label>
+                    <textarea class="btn btn-outline" style="width: 100%; height: 100px; text-align: left; margin-top: 10px; color: var(--text-main);" placeholder="Escribe aquí..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">ENVIAR ENCUESTA</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-left">
+            <h2>Dulce Tentación</h2>
+            <p>Panadería & Repostería de Autor</p>
+        </div>
+        <div class="footer-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="panaderia.html">Panadería</a></li>
+                <li><a href="reposteria.html">Repostería</a></li>
+                <li><a href="delicias-del-horno.html">Delicias del Horno</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="visitanos.html">Visítanos</a></li>
+                <li><a href="visitanos.html">Contacto</a></li>
+                <li><a href="encuesta.html">Encuesta</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div class="social-float">
+        <a href="https://wa.me/573105731569" class="float-btn wa" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" class="float-btn fb" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

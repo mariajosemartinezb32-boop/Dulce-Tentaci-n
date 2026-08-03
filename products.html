@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Dulce Tentación</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <style>
+        .page-header {
+            padding: 150px 5% 50px;
+            background-color: var(--bg-cream);
+            text-align: center;
+        }
+        .category-title {
+            margin: 60px 0 30px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary);
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo" style="color: var(--secondary);">DULCE TENTACIÓN</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="products.html">Productos <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="about.html">Nosotros</a></li>
+                <li><a href="contact.html">Visítanos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="#">Encuesta</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <a href="tel:+573105731569" style="color: var(--primary); font-weight: 700; margin-right: 20px; font-size: 0.9rem;">
+                <i class="fa-solid fa-phone"></i> +57 310 5731569
+            </a>
+            <a href="#" style="color: var(--secondary); font-size: 1.2rem;">
+                <i class="fa-solid fa-cart-shopping"></i> <span class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <h1>NUESTRO CATÁLOGO</h1>
+        <p>Calidad artesanal directo desde nuestro horno.</p>
+    </div>
+
+    <section class="container">
+        <h2 style="text-align: center; margin-bottom: 50px;">TODOS NUESTROS PRODUCTOS</h2>
+        <div class="products-grid">
+            <!-- Panes -->
+            <div class="product-card">
+                <div class="product-image"><img src="images/ALILLADO.jpeg" alt="Pan Alillado"></div>
+                <div class="product-info"><h3>Pan Alillado</h3><span class="price">$3.500</span><button class="btn btn-primary" onclick="addToCart('Pan Alillado', 3500)">AGREGAR</button></div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="images/WhatsApp Image 2026-04-27 at 12.05.50.jpeg" alt="Pan Especial"></div>
+                <div class="product-info"><h3>Pan Especial</h3><span class="price">$4.000</span><button class="btn btn-primary" onclick="addToCart('Pan Especial', 4000)">AGREGAR</button></div>
+            </div>
+
+            <!-- Tortas -->
+            <div class="product-card">
+                <div class="product-image"><img src="images/tota de chocojpg.jpg" alt="Torta Chocolate"></div>
+                <div class="product-info"><h3>Torta de Chocolate</h3><span class="price">$45.000</span><button class="btn btn-primary" onclick="addToCart('Torta Chocolate', 45000)">AGREGAR</button></div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="images/TORTA CASERA.jpeg" alt="Torta Casera"></div>
+                <div class="product-info"><h3>Torta Casera</h3><span class="price">$35.000</span><button class="btn btn-primary" onclick="addToCart('Torta Casera', 35000)">AGREGAR</button></div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="images/TORTAS 1 (1).jpeg" alt="Torta Fresa"></div>
+                <div class="product-info"><h3>Torta de Fresa</h3><span class="price">$48.000</span><button class="btn btn-primary" onclick="addToCart('Torta Fresa', 48000)">AGREGAR</button></div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="images/TORTAS 2 (2).jpeg" alt="Torta Vainilla"></div>
+                <div class="product-info"><h3>Torta de Vainilla</h3><span class="price">$42.000</span><button class="btn btn-primary" onclick="addToCart('Torta Vainilla', 42000)">AGREGAR</button></div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="images/TORTAS 3  (3).jpeg" alt="Torta Especial"></div>
+                <div class="product-info"><h3>Torta Especial</h3><span class="price">$50.000</span><button class="btn btn-primary" onclick="addToCart('Torta Especial', 50000)">AGREGAR</button></div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="images/TORTAS 4 (4).jpeg" alt="Torta Decorada"></div>
+                <div class="product-info"><h3>Torta Decorada</h3><span class="price">$55.000</span><button class="btn btn-primary" onclick="addToCart('Torta Decorada', 55000)">AGREGAR</button></div>
+            </div>
+
+            <!-- Otros -->
+            <div class="product-card">
+                <div class="product-image"><img src="images/liberales .jpeg" alt="Liberales"></div>
+                <div class="product-info"><h3>Liberales Especiales</h3><span class="price">$2.500</span><button class="btn btn-primary" onclick="addToCart('Liberales', 2500)">AGREGAR</button></div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="images/tortas 27.JPG" alt="Postre"></div>
+                <div class="product-info"><h3>Postre de la Casa</h3><span class="price">$12.000</span><button class="btn btn-primary" onclick="addToCart('Postre Casa', 12000)">AGREGAR</button></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-left">
+            <h2>Dulce Tentación</h2>
+            <p>Panadería & Repostería de Autor</p>
+        </div>
+        <div class="footer-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="products.html">Panadería</a></li>
+                <li><a href="products.html">Repostería</a></li>
+                <li><a href="products.html">Delicias del Horno</a></li>
+                <li><a href="about.html">Nosotros</a></li>
+                <li><a href="contact.html">Visítanos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="#">Encuesta</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div class="social-float">
+        <a href="https://wa.me/573105731569" class="float-btn wa" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" class="float-btn fb" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
