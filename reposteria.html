@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repostería - Dulce Tentación</title>
+    <meta name="description" content="Descubre nuestra repostería artesanal en Dulce Tentación: tortas caseras, de chocolate, frutas y diseños especiales.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">DULCE <span>TENTACIÓN</span></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="products.html" class="active">Productos <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 5px;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="panaderia.html">Panadería <i class="fa-solid fa-bread-slice"></i></a></li>
+                        <li><a href="reposteria.html">Repostería <i class="fa-solid fa-cake-candles"></i></a></li>
+                        <li><a href="dulce-paladar.html">Dulce Paladar <i class="fa-solid fa-cookie"></i></a></li>
+                        <li><a href="delicias-del-horno.html">Delicias del Horno <i class="fa-solid fa-fire"></i></a></li>
+                        <li><a href="products.html">Catálogo Completo <i class="fa-solid fa-store"></i></a></li>
+                    </ul>
+                </li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="visitanos.html">Visítanos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="encuesta.html">Encuesta</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <a href="tel:+573105731569" class="phone-link"><i class="fa-solid fa-phone"></i> +57 310 5731569</a>
+            <a href="https://wa.me/573105731569" target="_blank" class="btn btn-primary" style="padding: 10px 22px; font-size: 0.85rem;">PEDIR YA</a>
+            <a href="cart.html" class="cart-icon" onclick="toggleCartDrawer(event)" title="Ver Carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+        <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+    </header>
+
+    <div class="page-header">
+        <h1 class="zoom-in">NUESTRA REPOSTERÍA</h1>
+        <p class="fade-in">Postres artesanales para momentos inolvidables.</p>
+    </div>
+
+    <section class="container" style="padding: 80px 20px;">
+        <div class="products-grid">
+            <div class="product-card reveal">
+                <div class="product-image"><img src="images/torta-chocolate.jpg" alt="Torta Chocolate"></div>
+                <div class="product-info">
+                    <h3>Torta de Chocolate</h3>
+                    <span class="price">$45.000</span>
+                    <button class="btn btn-primary btn-add-cart" data-id="torta-chocolate" data-name="Torta de Chocolate" data-price="45000" data-image="images/torta-chocolate.jpg" onclick="addToCart('torta-chocolate', 'Torta de Chocolate', 45000, 'images/torta-chocolate.jpg')"><i class="fa-solid fa-cart-plus"></i> Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="product-card reveal">
+                <div class="product-image"><img src="images/torta-casera.jpeg" alt="Torta Casera"></div>
+                <div class="product-info">
+                    <h3>Torta Casera</h3>
+                    <span class="price">$35.000</span>
+                    <button class="btn btn-primary btn-add-cart" data-id="torta-casera" data-name="Torta Casera" data-price="35000" data-image="images/torta-casera.jpeg" onclick="addToCart('torta-casera', 'Torta Casera', 35000, 'images/torta-casera.jpeg')"><i class="fa-solid fa-cart-plus"></i> Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="product-card reveal">
+                <div class="product-image"><img src="images/torta-1.jpeg" alt="Torta de la Casa"></div>
+                <div class="product-info">
+                    <h3>Torta de la Casa</h3>
+                    <span class="price">$48.000</span>
+                    <button class="btn btn-primary btn-add-cart" data-id="torta-casa" data-name="Torta de la Casa" data-price="48000" data-image="images/torta-1.jpeg" onclick="addToCart('torta-casa', 'Torta de la Casa', 48000, 'images/torta-1.jpeg')"><i class="fa-solid fa-cart-plus"></i> Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="product-card reveal">
+                <div class="product-image"><img src="images/torta-2.jpeg" alt="Torta Especial"></div>
+                <div class="product-info">
+                    <h3>Torta Especial</h3>
+                    <span class="price">$42.000</span>
+                    <button class="btn btn-primary btn-add-cart" data-id="torta-especial" data-name="Torta Especial" data-price="42000" data-image="images/torta-2.jpeg" onclick="addToCart('torta-especial', 'Torta Especial', 42000, 'images/torta-2.jpeg')"><i class="fa-solid fa-cart-plus"></i> Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="product-card reveal">
+                <div class="product-image"><img src="images/torta-3.jpeg" alt="Torta Gourmet"></div>
+                <div class="product-info">
+                    <h3>Torta Gourmet</h3>
+                    <span class="price">$50.000</span>
+                    <button class="btn btn-primary btn-add-cart" data-id="torta-gourmet" data-name="Torta Gourmet" data-price="50000" data-image="images/torta-3.jpeg" onclick="addToCart('torta-gourmet', 'Torta Gourmet', 50000, 'images/torta-3.jpeg')"><i class="fa-solid fa-cart-plus"></i> Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="product-card reveal">
+                <div class="product-image"><img src="images/torta-4.jpeg" alt="Torta de Cumpleaños"></div>
+                <div class="product-info">
+                    <h3>Torta de Cumpleaños</h3>
+                    <span class="price">$55.000</span>
+                    <button class="btn btn-primary btn-add-cart" data-id="torta-cumpleanos" data-name="Torta de Cumpleaños" data-price="55000" data-image="images/torta-4.jpeg" onclick="addToCart('torta-cumpleanos', 'Torta de Cumpleaños', 55000, 'images/torta-4.jpeg')"><i class="fa-solid fa-cart-plus"></i> Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="product-card reveal">
+                <div class="product-image"><img src="images/torta-5.jpeg" alt="Torta Temática"></div>
+                <div class="product-info">
+                    <h3>Torta Temática</h3>
+                    <span class="price">$60.000</span>
+                    <button class="btn btn-primary btn-add-cart" data-id="torta-tematica" data-name="Torta Temática" data-price="60000" data-image="images/torta-5.jpeg" onclick="addToCart('torta-tematica', 'Torta Temática', 60000, 'images/torta-5.jpeg')"><i class="fa-solid fa-cart-plus"></i> Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="product-card reveal">
+                <div class="product-image"><img src="images/torta-6.jpeg" alt="Torta Frutos Rojos"></div>
+                <div class="product-info">
+                    <h3>Torta Frutos Rojos</h3>
+                    <span class="price">$49.000</span>
+                    <button class="btn btn-primary btn-add-cart" data-id="torta-frutos-rojos" data-name="Torta Frutos Rojos" data-price="49000" data-image="images/torta-6.jpeg" onclick="addToCart('torta-frutos-rojos', 'Torta Frutos Rojos', 49000, 'images/torta-6.jpeg')"><i class="fa-solid fa-cart-plus"></i> Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h2 class="footer-logo">Dulce Tentación</h2>
+                <p>Productos frescos, deliciosos y preparados con dedicación para crear momentos especiales en familia.</p>
+                <div class="footer-socials">
+                    <a href="https://wa.me/573105731569" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="visitanos.html">Visítanos</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="encuesta.html">Encuesta de Calidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Nuestros Productos</h3>
+                <ul>
+                    <li><a href="panaderia.html">Panadería Artesanal</a></li>
+                    <li><a href="reposteria.html">Repostería de Autor</a></li>
+                    <li><a href="dulce-paladar.html">Dulce Paladar</a></li>
+                    <li><a href="delicias-del-horno.html">Delicias del Horno</a></li>
+                    <li><a href="products.html">Catálogo Completo</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Horarios & Atención</h3>
+                <p><i class="fa-solid fa-clock" style="color: var(--primary); margin-right: 8px;"></i> Lunes - Domingo</p>
+                <p style="color: white; font-weight: 700; margin-bottom: 12px;">7:00 AM - 8:00 PM</p>
+                <p><i class="fa-solid fa-location-dot" style="color: var(--primary); margin-right: 8px;"></i> Tocaima Cundinamarca<br>Barrio San Jacinto #5-45</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dulce Tentación. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <div class="social-float">
+        <a href="https://wa.me/573105731569" class="float-btn wa" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" class="float-btn fb" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
