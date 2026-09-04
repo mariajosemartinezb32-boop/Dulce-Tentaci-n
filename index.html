@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panadería y Repostería El Nuevo Milenio | Venta de Pan y Postres</title>
+  <meta name="description" content="Venta de panes artesanales recién horneados, deliciosas galletas, postres gourmet y tortas personalizadas para toda ocasión en Panadería El Nuevo Milenio. ¡Pide fácil por WhatsApp!">
+  <meta name="keywords" content="panaderia, reposteria, venta de pan, tortas de cumpleaños, postres, galletas, pan caliente, domicilios">
+  <meta property="og:title" content="Panadería y Repostería El Nuevo Milenio">
+  <meta property="og:description" content="El auténtico sabor tradicional y los postres más deliciosos, horneados con amor. Pedidos a domicilio y por encargo.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="surtido-panes-especiales.jpeg">
+  <meta name="theme-color" content="#c97a1e">
+
+  <!-- Favicon icon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥖</text></svg>">
+
+  <!-- Preconnect Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Barra Superior de Anuncios y Estado -->
+  <aside class="top-announcement-bar">
+    <div class="container announcement-inner">
+      <div id="bakery-status-badge" class="status-indicator">
+        <span class="status-dot dot-green"></span>
+        <strong>Abierto Ahora:</strong> Horneando panes frescos hasta las 9:30 PM
+      </div>
+      <div>
+        <span>🔥 Horneadas calientes: <strong>6:30 AM</strong> | <strong>11:30 AM</strong> | <strong>4:30 PM</strong></span>
+      </div>
+      <div>
+        <span>🛵 Domicilios y Encargos WhatsApp: <strong>+57 312 345 6789</strong></span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Encabezado Principal -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="#inicio" class="brand-logo-link">
+        <div class="brand-badge-icon">🥖</div>
+        <div class="brand-titles">
+          <span class="brand-main-title">El Nuevo Milenio</span>
+          <span class="brand-subtitle">Panadería & Repostería Artesanal</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+          <li><a href="#catalogo" class="nav-link">Catálogo & Menú</a></li>
+          <li><a href="#tortas-personalizadas" class="nav-link">Tortas por Encargo</a></li>
+          <li><a href="#testimonios" class="nav-link">Opiniones</a></li>
+          <li><a href="#contacto" class="nav-link">Ubicación & Horarios</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="btn-pos-mode" id="pos-mode-btn" title="Acceso para el personal / Caja">
+          <span>💼</span>
+          <span>Cajero POS</span>
+        </button>
+
+        <button type="button" class="btn-header-cart" id="open-cart-btn" aria-label="Abrir canasta de compras">
+          <span>🛒</span>
+          <span>Canasta</span>
+          <span class="cart-count-badge" id="cart-count-badge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección Hero / Portada -->
+  <section id="inicio" class="hero-section">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-particles" aria-hidden="true">
+      <span>🥐</span><span>🥖</span><span>🍪</span><span>🎂</span><span>🍰</span><span>🥐</span>
+    </div>
+    <div class="container hero-grid">
+      <div class="hero-text-col">
+        <div class="hero-tag">
+          <span class="hero-tag-dot"></span>
+          <span>✨ Tradición & Calidad desde el año 2000</span>
+        </div>
+        <h1 class="hero-title">
+          El aroma y sabor del <span class="hero-title-highlight">pan recién horneado</span> en tu mesa.
+        </h1>
+        <p class="hero-description">
+          Disfruta de nuestros panes calientes dorados, crujientes galletas artesanales, polvorones tradicionales y exquisitas tortas personalizadas preparadas con los mejores ingredientes.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#catalogo" class="btn btn-primary btn-hero-main">
+            <span>🥖 Ver Menú & Pedir</span>
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=573001234567&text=Hola!%20Deseo%20hacer%20un%20pedido%20en%20Panader%C3%ADa%20El%20Nuevo%20Milenio" target="_blank" rel="noopener" class="btn btn-whatsapp">
+            <span>💬 WhatsApp Directo</span>
+          </a>
+          <a href="#tortas-personalizadas" class="btn btn-outline">
+            <span>🎂 Cotizar Torta</span>
+          </a>
+        </div>
+
+        <div class="hero-highlights">
+          <div class="highlight-item">
+            <strong>+26</strong>
+            <span>Años de Tradición</span>
+          </div>
+          <div class="highlight-item">
+            <strong>3×</strong>
+            <span>Horneadas al día</span>
+          </div>
+          <div class="highlight-item">
+            <strong>4.9 ★</strong>
+            <span>Calificación Clientes</span>
+          </div>
+          <div class="highlight-item">
+            <strong>100%</strong>
+            <span>Artesanal & Natural</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual-col">
+        <div class="hero-visual-card">
+          <div class="hero-main-img-wrap">
+            <img src="surtido-panes-especiales.jpeg" alt="Vitrina de Panes de Panadería El Nuevo Milenio" class="hero-showcase-img">
+            <div class="hero-img-shine"></div>
+          </div>
+          <div class="hero-floating-pill">
+            <div class="pill-icon">🥐</div>
+            <div>
+              <h4>¡Vitrina Siempre Surtida!</h4>
+              <p>Panes hojaldrados, quesos y dulces</p>
+            </div>
+          </div>
+          <div class="hero-floating-badge-fresh">
+            🔥 Recién horneado hoy
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Franja de Beneficios y Horarios -->
+  <section class="feature-strip">
+    <div class="container feature-grid">
+      <div class="feature-box">
+        <div class="feat-icon-bubble">🥖</div>
+        <div class="feat-text">
+          <h4>Recién Horneado</h4>
+          <p>Pan crujiente y caliente todo el día</p>
+        </div>
+      </div>
+      <div class="feature-box">
+        <div class="feat-icon-bubble">🛵</div>
+        <div class="feat-text">
+          <h4>Domicilios Rápidos</h4>
+          <p>Llevamos tu pedido fresco a casa</p>
+        </div>
+      </div>
+      <div class="feature-box">
+        <div class="feat-icon-bubble">🎂</div>
+        <div class="feat-text">
+          <h4>Tortas por Encargo</h4>
+          <p>Diseños temáticos para tus fiestas</p>
+        </div>
+      </div>
+      <div class="feature-box">
+        <div class="feat-icon-bubble">💳</div>
+        <div class="feat-text">
+          <h4>Múltiples Pagos</h4>
+          <p>Efectivo, Nequi, Daviplata y Tarjeta</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catálogo de Productos y Menú Digital -->
+  <section id="catalogo" class="catalog-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtag">Nuestras Especialidades</span>
+        <h2 class="section-title">Venta de Pan & Postres Deliciosos</h2>
+        <p class="section-lead">Selecciona tus productos favoritos, personaliza las porciones y realiza tu pedido fácilmente para entrega a domicilio o retiro en tienda.</p>
+      </div>
+
+      <!-- Barra de herramientas: Búsqueda y Filtros de Categorías -->
+      <div class="catalog-toolbar">
+        <div class="search-box-wrap">
+          <span class="search-icon-left">🔍</span>
+          <input type="text" id="search-input" class="search-input" placeholder="Buscar por pan de queso, torta de chocolate, polvorones, galletas...">
+          <button type="button" id="clear-search-btn" class="clear-search-btn" title="Limpiar búsqueda">✕</button>
+        </div>
+
+        <div class="categories-container" id="categories-container">
+          <!-- Renderizado dinámico vía JavaScript -->
+        </div>
+      </div>
+
+      <!-- Estado de Resultados -->
+      <div class="catalog-status-bar">
+        <span id="products-count-label">Cargando productos...</span>
+        <span>⚡ Precios en Pesos Colombianos (COP)</span>
+      </div>
+
+      <!-- Grid de Productos -->
+      <div class="products-grid" id="products-grid">
+        <!-- Renderizado dinámico vía JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Diseñador y Cotizador de Tortas Personalizadas -->
+  <section id="tortas-personalizadas" class="custom-cake-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtag">Repostería a tu Medida</span>
+        <h2 class="section-title">Cotiza tu Torta Personalizada</h2>
+        <p class="section-lead">Diseñamos la torta perfecta para tus cumpleaños, aniversarios y momentos inolvidables.</p>
+      </div>
+
+      <div class="cake-builder-card">
+        <!-- Panel Izquierdo: Vista previa y resumen -->
+        <div class="cake-builder-preview">
+          <div class="cake-preview-head">
+            <h3>Tu Celebración Soñada</h3>
+            <p>Elige porciones, bizcocho, relleno y temática. Calculamos un estimado al instante para coordinar en WhatsApp.</p>
+          </div>
+
+          <div class="cake-preview-illustration">
+            <img src="combo-tarde-dulce.jpeg" alt="Ejemplo de Torta Personalizada" class="cake-hero-show">
+          </div>
+
+          <div class="cake-estimate-box">
+            <div>
+              <span>Presupuesto Estimado:</span>
+              <p style="font-size: 0.8rem; opacity: 0.8;">Precio base según opciones</p>
+            </div>
+            <strong id="cake-estimate-total">$55.000</strong>
+          </div>
+        </div>
+
+        <!-- Panel Derecho: Formulario Interactivo -->
+        <div class="cake-builder-form-wrap">
+          <form id="custom-cake-form">
+            <!-- 1. Porciones -->
+            <div class="form-step-group">
+              <label class="form-step-label">1. Número de Porciones:</label>
+              <div class="option-pills-grid">
+                <label class="option-pill-label">
+                  <input type="radio" name="cake_portions" value="portions_10">
+                  <span>10 porciones</span>
+                </label>
+                <label class="option-pill-label">
+                  <input type="radio" name="cake_portions" value="portions_15" checked>
+                  <span>15 porciones</span>
+                </label>
+                <label class="option-pill-label">
+                  <input type="radio" name="cake_portions" value="portions_20">
+                  <span>20 porciones</span>
+                </label>
+                <label class="option-pill-label">
+                  <input type="radio" name="cake_portions" value="portions_30">
+                  <span>30 porciones</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- 2. Sabor de Bizcocho -->
+            <div class="form-step-group">
+              <label class="form-step-label">2. Sabor del Bizcochuelo:</label>
+              <div class="option-pills-grid">
+                <label class="option-pill-label">
+                  <input type="radio" name="cake_sponge" value="vainilla" checked>
+                  <span>Vainilla Clásica</span>
+                </label>
+                <label class="option-pill-label">
+                  <input type="radio" name="cake_sponge" value="chocolate">
+                  <span>Chocolate Húmedo</span>
+                </label>
+                <label class="option-pill-label">
+                  <input type="radio" name="cake_sponge" value="tres_leches">
+                  <span>Tres Leches (+ $6.000)</span>
+                </label>
+                <label class="option-pill-label">
+                  <input type="radio" name="cake_sponge" value="red_velvet">
+                  <span>Red Velvet (+ $5.000)</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- 3. Relleno -->
+            <div class="form-step-group">
+              <label for="cake_filling" class="form-step-label">3. Relleno Especial:</label>
+              <select name="cake_filling" id="cake_filling" class="form-select">
+                <option value="arequipe">Arequipe Tradicional (Sin costo adicional)</option>
+                <option value="crema_pastelera">Crema Pastelera de la Casa (Sin costo adicional)</option>
+                <option value="frutos_rojos">Mermelada Artesanal de Frutos Rojos (+ $4.000)</option>
+                <option value="chocolate_ganache">Ganache Cremosa de Chocolate (+ $4.000)</option>
+                <option value="fresas_crema">Fresas Frescas con Crema (+ $5.000)</option>
+                <option value="maracuya_mousse">Mousse de Maracuyá (+ $5.000)</option>
+              </select>
+            </div>
+
+            <!-- 4. Decoraciones Adicionales -->
+            <div class="form-step-group">
+              <label class="form-step-label">4. Decoraciones y Aditamentos:</label>
+              <div class="option-pills-grid">
+                <label class="option-pill-label">
+                  <input type="checkbox" name="cake_decorations" value="chantilly_frutas">
+                  <span>Frutas Frescas (+ $5.000)</span>
+                </label>
+                <label class="option-pill-label">
+                  <input type="checkbox" name="cake_decorations" value="drip_chocolate">
+                  <span>Drip Chocolate (+ $6.000)</span>
+                </label>
+                <label class="option-pill-label">
+                  <input type="checkbox" name="cake_decorations" value="topper_personalizado">
+                  <span>Topper Feliz Cumple (+ $8.000)</span>
+                </label>
+                <label class="option-pill-label">
+                  <input type="checkbox" name="cake_decorations" value="fondant_tematico">
+                  <span>Temática Fondant/3D (+ $15.000)</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- 5. Temática y Dedicatoria -->
+            <div class="form-step-group">
+              <div class="form-row-dual">
+                <div>
+                  <label for="cake_theme" class="form-step-label">Temática o motivo:</label>
+                  <input type="text" id="cake_theme" class="form-input" placeholder="Ej: TikTok, Unicornio, Flores, Elegante...">
+                </div>
+                <div>
+                  <label for="cake_dedication" class="form-step-label">Mensaje en la torta:</label>
+                  <input type="text" id="cake_dedication" class="form-input" placeholder="Ej: Feliz Cumple Mamita...">
+                </div>
+              </div>
+            </div>
+
+            <!-- 6. Datos de Contacto -->
+            <div class="form-step-group">
+              <div class="form-row-dual">
+                <div>
+                  <label for="cake_cust_name" class="form-step-label">Tu Nombre:</label>
+                  <input type="text" id="cake_cust_name" required class="form-input" placeholder="Tu nombre completo">
+                </div>
+                <div>
+                  <label for="cake_date" class="form-step-label">Fecha de entrega:</label>
+                  <input type="date" id="cake_date" required class="form-input">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-step-group">
+              <label for="cake_notes" class="form-step-label">Comentarios o detalles especiales:</label>
+              <textarea id="cake_notes" rows="2" class="form-textarea" placeholder="Indícanos colores preferidos, si tienes foto de referencia o alergias..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-whatsapp" style="width: 100%; padding: 16px; font-size: 1rem;">
+              <span>💬 Enviar Cotización por WhatsApp</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Opiniones de Clientes -->
+  <section id="testimonios" class="reviews-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtag">Clientes Felices</span>
+        <h2 class="section-title">Lo que Dicen de Nosotros</h2>
+        <p class="section-lead">La satisfacción y la sonrisa de nuestras familias son nuestro mayor orgullo.</p>
+      </div>
+
+      <div class="reviews-grid" id="reviews-carousel">
+        <!-- Renderizado dinámico vía JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto, Ubicación y Horarios -->
+  <section id="contacto" class="contact-section">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <h2>Visítanos en el Local</h2>
+        <p>Siente el aroma del pan recién salido del horno y acompáñalo con un buen café caliente o lleva los postres más ricos para tu hogar.</p>
+
+        <div class="contact-details-list">
+          <div class="contact-item">
+            <div class="contact-item-icon">📍</div>
+            <div class="contact-item-text">
+              <strong>Dirección Principal:</strong>
+              <span>Calle Principal # 12-34, Barrio Central</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">⏰</div>
+            <div class="contact-item-text">
+              <strong>Horarios de Atención:</strong>
+              <span>Lunes a Domingo: 6:00 AM a 9:30 PM (Jornada Continua)</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">📞</div>
+            <div class="contact-item-text">
+              <strong>Teléfono & Pedidos:</strong>
+              <span>+57 312 345 6789 / Domicilios en todo el sector</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://api.whatsapp.com/send?phone=573001234567&text=Hola!%20Deseo%20hacer%20una%20consulta%20a%20Panader%C3%ADa%20El%20Nuevo%20Milenio" target="_blank" rel="noopener" class="btn btn-whatsapp">
+          <span>💬 Chatear con la Panadería</span>
+        </a>
+      </div>
+
+      <div class="contact-showcase-box">
+        <h3>🥖 Panadería El Nuevo Milenio</h3>
+        <p>El punto de encuentro tradicional de las familias para el desayuno, las onces y los momentos dulces.</p>
+        <img src="pan-casero-dorado.jpeg" alt="Pan Artesanal Dorado" style="max-height: 200px; margin: 0 auto 16px; border-radius: 12px;">
+        <span style="font-size: 0.85rem; color: #fce0a2;">¡Te esperamos con los brazos abiertos!</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de Página mejorado -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container footer-top-grid">
+        <div class="footer-brand-col">
+          <div class="footer-logo">
+            <div class="brand-badge-icon" style="width:48px;height:48px;font-size:1.4rem;">🥖</div>
+            <div>
+              <strong>El Nuevo Milenio</strong>
+              <span>Panadería & Repostería Artesanal</span>
+            </div>
+          </div>
+          <p class="footer-tagline">Horneando felicidad desde el año 2000. Tradición, sabor y calidad en cada producto.</p>
+          <div class="footer-social-links">
+            <a href="https://api.whatsapp.com/send?phone=573001234567" target="_blank" rel="noopener" class="social-btn whatsapp" title="WhatsApp">💬</a>
+            <a href="#" class="social-btn instagram" title="Instagram">📸</a>
+            <a href="#" class="social-btn facebook" title="Facebook">👍</a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h5>Navegación</h5>
+          <ul>
+            <li><a href="#inicio">🏠 Inicio</a></li>
+            <li><a href="#catalogo">🥖 Catálogo & Menú</a></li>
+            <li><a href="#tortas-personalizadas">🎂 Tortas por Encargo</a></li>
+            <li><a href="#testimonios">⭐ Opiniones</a></li>
+            <li><a href="#contacto">📍 Ubicación & Horarios</a></li>
+          </ul>
+        </div>
+        <div class="footer-info-col">
+          <h5>Contacto</h5>
+          <ul>
+            <li>📍 Calle Principal # 12-34, Barrio Central</li>
+            <li>📞 +57 300 123 4567</li>
+            <li>⏰ Lun–Dom: 6:00 AM – 9:30 PM</li>
+            <li>🔥 Horneos: 6:30 AM | 11:30 AM | 4:30 PM</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-inner">
+        <p>© 2026 Panadería y Repostería El Nuevo Milenio. Todos los derechos reservados.</p>
+        <p>Hecho con ❤️ para los amantes del buen pan 🥖🍰</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón Flotante de Canasta -->
+  <div class="floating-cart-badge" id="floating-cart-badge">
+    <span style="font-size: 1.3rem;">🛒</span>
+    <span>Ver Canasta (<strong id="floating-cart-count">0</strong>)</span>
+  </div>
+
+  <!-- Botón Flotante WhatsApp -->
+  <a href="https://api.whatsapp.com/send?phone=573001234567&text=Hola!%20Quisiera%20hacer%20un%20pedido%20en%20Panader%C3%ADa%20El%20Nuevo%20Milenio%20🥖" target="_blank" rel="noopener" class="floating-whatsapp-btn" title="Escríbenos por WhatsApp" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="whatsapp-tooltip">¡Escríbenos!</span>
+  </a>
+
+  <!-- Backdrop y Drawer de Carrito -->
+  <div class="cart-backdrop" id="cart-backdrop"></div>
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="cart-drawer-header">
+      <h3><span>🧺</span> Tu Canasta de Panes & Postres</h3>
+      <button type="button" class="btn-close-drawer" id="close-cart-btn" aria-label="Cerrar canasta">✕</button>
+    </div>
+
+    <div class="cart-items-list" id="cart-items-list">
+      <!-- Items cargados dinámicamente -->
+    </div>
+
+    <div class="cart-drawer-footer">
+      <div class="cart-totals-summary">
+        <div class="cart-sum-row">
+          <span>Subtotal productos:</span>
+          <strong id="cart-subtotal">$0</strong>
+        </div>
+        <div class="cart-sum-row">
+          <span>Domicilio estimado:</span>
+          <strong id="cart-shipping">$4.000</strong>
+        </div>
+        <div class="cart-sum-row total-row">
+          <span>Total a Pagar:</span>
+          <strong id="cart-total">$0</strong>
+        </div>
+      </div>
+
+      <button type="button" class="btn btn-primary btn-checkout-full" id="cart-checkout-btn">
+        <span>🚀 Continuar con el Pedido</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Modal Detalle de Producto -->
+  <div class="modal-overlay" id="product-detail-modal">
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" onclick="closeProductModal()" aria-label="Cerrar modal">✕</button>
+      <div id="product-modal-content">
+        <!-- Contenido dinámico -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Checkout / Finalizar Pedido -->
+  <div class="modal-overlay" id="checkout-modal">
+    <div class="modal-card checkout-modal-card">
+      <button type="button" class="modal-close-btn" id="close-checkout-btn" aria-label="Cerrar">✕</button>
+      
+      <div class="checkout-modal-header">
+        <span style="font-size: 2rem;">🛍️</span>
+        <h3>Finalizar Pedido</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">Revisa tu resumen y elige la forma de entrega.</p>
+      </div>
+
+      <div id="checkout-order-summary" class="checkout-order-summary">
+        <!-- Resumen dinámico -->
+      </div>
+
+      <form id="checkout-form">
+        <!-- Selección de Entrega -->
+        <label style="display: block; font-weight: 700; margin-bottom: 8px; font-size: 0.9rem;">Modalidad de Entrega:</label>
+        <div class="delivery-toggle-grid">
+          <label class="delivery-toggle-card">
+            <input type="radio" name="delivery_option" value="delivery" checked>
+            <div style="font-size: 1.3rem; margin-bottom: 2px;">🛵</div>
+            <strong>A Domicilio</strong>
+            <p style="font-size: 0.75rem; color: var(--text-muted);">+$4.000 COP</p>
+          </label>
+          <label class="delivery-toggle-card">
+            <input type="radio" name="delivery_option" value="pickup">
+            <div style="font-size: 1.3rem; margin-bottom: 2px;">🏬</div>
+            <strong>Recoger en Tienda</strong>
+            <p style="font-size: 0.75rem; color: var(--text-muted);">Sin costo adicional</p>
+          </label>
+        </div>
+
+        <!-- Campos para Domicilio -->
+        <div id="delivery-address-fields">
+          <div class="form-step-group">
+            <label for="cust_address" style="font-size: 0.85rem; font-weight: 600;">Dirección de Entrega:</label>
+            <input type="text" id="cust_address" name="cust_address" class="form-input" placeholder="Ej: Carrera 15 # 45-20, Apto 302">
+          </div>
+          <div class="form-step-group">
+            <div class="form-row-dual">
+              <div>
+                <label for="cust_neighborhood" style="font-size: 0.85rem; font-weight: 600;">Barrio / Sector:</label>
+                <input type="text" id="cust_neighborhood" name="cust_neighborhood" class="form-input" placeholder="Ej: Las Palmas">
+              </div>
+              <div>
+                <label for="cust_reference" style="font-size: 0.85rem; font-weight: 600;">Punto de referencia:</label>
+                <input type="text" id="cust_reference" name="cust_reference" class="form-input" placeholder="Ej: Frente al parque">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Campos para Recoger en tienda -->
+        <div id="pickup-info-fields" style="display: none; background: #fff8eb; padding: 12px; border-radius: 8px; margin-bottom: 16px; border: 1px dashed var(--primary-gold);">
+          <p style="font-size: 0.85rem; color: var(--cocoa-dark);">📍 <strong>Dirección de Retiro:</strong> Calle Principal # 12-34, Panadería El Nuevo Milenio.</p>
+          <label for="cust_pickuptime" style="display: block; font-size: 0.82rem; margin-top: 8px;"><strong>¿A qué hora aproximada pasarás?:</strong></label>
+          <input type="time" id="cust_pickuptime" name="cust_pickuptime" class="form-input" style="padding: 8px;">
+        </div>
+
+        <!-- Datos del Cliente -->
+        <div class="form-step-group">
+          <div class="form-row-dual">
+            <div>
+              <label for="cust_name" style="font-size: 0.85rem; font-weight: 600;">Tu Nombre Completo:*</label>
+              <input type="text" id="cust_name" name="cust_name" required class="form-input" placeholder="Ej: Carlos Ramírez">
+            </div>
+            <div>
+              <label for="cust_phone" style="font-size: 0.85rem; font-weight: 600;">Teléfono de Contacto:*</label>
+              <input type="tel" id="cust_phone" name="cust_phone" required class="form-input" placeholder="Ej: 3123456789">
+            </div>
+          </div>
+        </div>
+
+        <!-- Método de Pago -->
+        <div class="form-step-group">
+          <label style="display: block; font-weight: 700; margin-bottom: 8px; font-size: 0.85rem;">Método de Pago:</label>
+          <div class="payment-methods-grid">
+            <label class="option-pill-label">
+              <input type="radio" name="payment_method" value="Efectivo" checked>
+              <span>💵 Efectivo</span>
+            </label>
+            <label class="option-pill-label">
+              <input type="radio" name="payment_method" value="Nequi / Daviplata">
+              <span>📱 Nequi / Daviplata</span>
+            </label>
+            <label class="option-pill-label">
+              <input type="radio" name="payment_method" value="Transferencia / Tarjeta">
+              <span>💳 Datáfono / Tarjeta</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-step-group">
+          <label for="cust_cash_amount" style="font-size: 0.82rem; color: var(--text-muted);">Si pagas en efectivo, ¿con cuánto billete pagas? (Para llevarte cambio):</label>
+          <input type="number" id="cust_cash_amount" name="cust_cash_amount" class="form-input" placeholder="Ej: 20000 o 50000">
+        </div>
+
+        <div class="form-step-group">
+          <label for="cust_general_notes" style="font-size: 0.82rem;">Notas adicionales para la entrega:</label>
+          <input type="text" id="cust_general_notes" name="cust_general_notes" class="form-input" placeholder="Ej: Tocar el timbre blanco, llamar al llegar...">
+        </div>
+
+        <button type="submit" class="btn btn-whatsapp" style="width: 100%; padding: 16px; font-size: 1.05rem;">
+          <span>💬 Enviar Pedido a WhatsApp de la Panadería</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal POS / Punto de Venta para Personal del Mostrador -->
+  <div class="modal-overlay" id="pos-modal">
+    <div class="modal-card pos-modal-card">
+      <div class="pos-modal-header">
+        <div class="pos-header-title">
+          <span style="font-size: 1.4rem;">💼</span>
+          <h3>Cajero POS - Ventas de Mostrador</h3>
+        </div>
+        <button type="button" class="btn-close-drawer" id="close-pos-btn" style="color: white; background: rgba(255,255,255,0.15);" aria-label="Cerrar">✕</button>
+      </div>
+
+      <div class="pos-layout-body">
+        <!-- Panel Izquierdo: Selección rápida de productos -->
+        <div class="pos-catalog-panel">
+          <div class="pos-search-bar">
+            <input type="text" id="pos-search-product" class="form-input" placeholder="🔍 Filtrar pan, torta o galleta en mostrador...">
+          </div>
+          <div class="pos-items-grid" id="pos-items-grid">
+            <!-- Botones de productos cargados por JS -->
+          </div>
+        </div>
+
+        <!-- Panel Derecho: Canasta de Venta y Cobro -->
+        <div class="pos-cashier-panel">
+          <h4 style="margin-bottom: 10px; font-size: 1.05rem;">🧾 Venta Actual</h4>
+          
+          <div class="pos-cart-list" id="pos-cart-list">
+            <!-- Items de la venta -->
+          </div>
+
+          <div class="pos-total-display">
+            <span>TOTAL VENTA:</span>
+            <strong id="pos-total-amount">$0</strong>
+          </div>
+
+          <div class="pos-payment-actions">
+            <div class="form-row-dual">
+              <div>
+                <label style="font-size: 0.78rem; font-weight: 700;">Método:</label>
+                <select id="pos-payment-method" class="form-select">
+                  <option value="Efectivo">Efectivo</option>
+                  <option value="Nequi">Nequi</option>
+                  <option value="Daviplata">Daviplata</option>
+                  <option value="Datáfono">Datáfono / Tarjeta</option>
+                </select>
+              </div>
+              <div>
+                <label style="font-size: 0.78rem; font-weight: 700;">Dinero Recibido ($):</label>
+                <input type="number" id="pos-cash-given" class="form-input" placeholder="0">
+              </div>
+            </div>
+
+            <div style="background: var(--cream-bg); padding: 8px 12px; border-radius: 6px; display: flex; justify-content: space-between; font-size: 0.9rem;">
+              <span>Cambio / Vueltas:</span>
+              <strong id="pos-change-due" style="color: var(--fresh-green);">$0</strong>
+            </div>
+
+            <div style="display: flex; gap: 8px;">
+              <button type="button" class="btn btn-outline" id="pos-btn-clear-sale" style="color: var(--cocoa-dark); border-color: #ccc; flex: 1;">
+                Limpiar
+              </button>
+              <button type="button" class="btn btn-primary" id="pos-btn-complete-sale" style="flex: 2;">
+                ✅ Cobrar Venta
+              </button>
+            </div>
+          </div>
+
+          <!-- Estadísticas del Día -->
+          <div class="pos-stats-section">
+            <h5 style="font-size: 0.85rem; text-transform: uppercase; margin-bottom: 8px; color: var(--text-light);">Resumen de Caja de Hoy:</h5>
+            <div class="pos-stats-grid">
+              <div class="pos-stat-box">
+                <strong id="pos-stat-count">0</strong>
+                <span>Ventas Registradas</span>
+              </div>
+              <div class="pos-stat-box">
+                <strong id="pos-stat-total">$0</strong>
+                <span>Ingreso Total</span>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-outline" id="pos-btn-print-receipt" style="width: 100%; font-size: 0.8rem; padding: 6px; color: var(--cocoa-dark); border-color: #ddd;">
+              🖨️ Imprimir Ticket / Factura
+            </button>
+
+            <div id="pos-receipt-print-area">
+              <!-- Ticket imprimible -->
+            </div>
+
+            <div id="pos-history-list" style="margin-top: 10px; max-height: 120px; overflow-y: auto; font-size: 0.78rem;">
+              <!-- Historial de ventas -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/custom-cake.js"></script>
+  <script src="js/pos.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- Animaciones de entrada al hacer scroll -->
+  <script>
+    (function() {
+      // Agregar clase fade-in-up a secciones y elementos clave
+      const targets = [
+        '.feature-box',
+        '.product-card',
+        '.review-card',
+        '.section-header',
+        '.cake-builder-card',
+        '.contact-info',
+        '.contact-showcase-box',
+        '.footer-brand-col',
+        '.footer-links-col',
+        '.footer-info-col'
+      ];
+
+      targets.forEach(selector => {
+        document.querySelectorAll(selector).forEach((el, i) => {
+          el.classList.add('fade-in-up');
+          el.style.transitionDelay = (i * 0.07) + 's';
+        });
+      });
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+      document.querySelectorAll('.fade-in-up').forEach(el => observer.observe(el));
+
+      // Re-aplicar a tarjetas dinámicas al renderizarse
+      const gridObserver = new MutationObserver(() => {
+        document.querySelectorAll('.product-card:not(.fade-in-up)').forEach((el, i) => {
+          el.classList.add('fade-in-up');
+          el.style.transitionDelay = (i * 0.05) + 's';
+          observer.observe(el);
+        });
+        document.querySelectorAll('.review-card:not(.fade-in-up)').forEach((el, i) => {
+          el.classList.add('fade-in-up');
+          el.style.transitionDelay = (i * 0.1) + 's';
+          observer.observe(el);
+        });
+      });
+
+      const grid = document.getElementById('products-grid');
+      const reviews = document.getElementById('reviews-carousel');
+      if (grid) gridObserver.observe(grid, { childList: true });
+      if (reviews) gridObserver.observe(reviews, { childList: true });
+    })();
+  </script>
+</body>
+</html>
